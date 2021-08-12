@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+calculadora,com.ufes.gqs.model,Calculadora,0,24,0,0,0,10,0,7,0,7
+calculadora,com.ufes.gqs.model,Divisao,0,11,0,0,0,3,0,2,0,2
+calculadora,com.ufes.gqs.model,Subtracao,0,11,0,0,0,3,0,2,0,2
+calculadora,com.ufes.gqs.model,Multiplicacao,0,11,0,0,0,3,0,2,0,2
+calculadora,com.ufes.gqs.model,Soma,0,11,0,0,0,3,0,2,0,2
+calculadora,com.ufes.gqs.main,App,107,0,0,0,26,0,2,0,2,0

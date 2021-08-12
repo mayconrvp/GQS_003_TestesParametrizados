@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>App.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculadora</a> &gt; <a href="index.source.html" class="el_package">com.ufes.gqs.main</a> &gt; <span class="el_source">App.java</span></div><h1>App.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.ufes.gqs.main;
+
+import com.ufes.gqs.model.Calculadora;
+import com.ufes.gqs.model.Divisao;
+import com.ufes.gqs.model.Multiplicacao;
+import com.ufes.gqs.model.Soma;
+import com.ufes.gqs.model.Subtracao;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/**
+ *
+ * @author mayco
+ */
+<span class="nc" id="L20">public class App {</span>
+    public static void main(String[] args) {
+<span class="nc" id="L22">        Calculadora calc = new Calculadora();</span>
+<span class="nc" id="L23">        Soma soma = new Soma();</span>
+<span class="nc" id="L24">        Subtracao sub = new Subtracao();</span>
+<span class="nc" id="L25">        Multiplicacao mult = new Multiplicacao();</span>
+<span class="nc" id="L26">        Divisao divi = new Divisao();</span>
+<span class="nc" id="L27">        DecimalFormat formatador = new DecimalFormat(&quot;0.00&quot;);</span>
+<span class="nc" id="L28">        Scanner input = new Scanner(System.in);</span>
+        
+<span class="nc" id="L30">        double n1=0;</span>
+<span class="nc" id="L31">        double n2=0;</span>
+        double result;
+        
+        try{
+
+<span class="nc" id="L36">            System.out.println(&quot;Digite o 1º Número: &quot;);</span>
+<span class="nc" id="L37">            n1 = input.nextDouble();</span>
+<span class="nc" id="L38">            System.out.println(&quot;Digite o 2º Número: &quot;);</span>
+<span class="nc" id="L39">            n2 = input.nextDouble(); </span>
+
+<span class="nc" id="L41">            result = soma.calcular(n1, n2);</span>
+<span class="nc" id="L42">            System.out.println(&quot;Soma: &quot; +n1+&quot; + &quot;+n2 +&quot; = &quot;+ formatador.format(result));</span>
+
+<span class="nc" id="L44">            result = sub.calcular(n1, n2);</span>
+<span class="nc" id="L45">            System.out.println(&quot;Subtracao: &quot; +n1+&quot; - &quot;+n2 +&quot; = &quot;+ formatador.format(result));</span>
+
+<span class="nc" id="L47">            result = mult.calcular(n1, n2);</span>
+<span class="nc" id="L48">            System.out.println(&quot;Multiplicação: &quot; +n1+&quot; * &quot;+n2 +&quot; = &quot;+ formatador.format(result));</span>
+
+<span class="nc" id="L50">            result = divi.calcular(n1, n2);</span>
+<span class="nc" id="L51">            System.out.println(&quot;Divisão: &quot; +n1+&quot; / &quot;+n2 +&quot; = &quot;+ formatador.format(result));</span>
+
+
+<span class="nc" id="L54">        }catch(Exception e){</span>
+<span class="nc" id="L55">            System.out.println(&quot;O valor digitado não é válido&quot;);</span>
+
+<span class="nc" id="L57">        }</span>
+        
+<span class="nc" id="L59">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
